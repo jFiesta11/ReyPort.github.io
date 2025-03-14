@@ -59,10 +59,10 @@
 
 // }
 
-// if(window.innerHeight >= innerWidth){
-//     mobileSearch()
-// }
-// else{
-// searchButtonEvent()
-// search()
-// }
+if(window.innerHeight >= innerWidth){
+    mobileSearch()
+}
+else{
+searchButtonEvent()
+search()
+}

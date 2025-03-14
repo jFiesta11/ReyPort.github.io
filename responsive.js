@@ -84,10 +84,7 @@ function responsiveSearch() {
     window.addEventListener('resize', handleResize);
     handleResize(); // Run once to set initial state
 }
-function flipContents(){
-    artSum =document.getElementById("artSum")
-    artPic =document.getElementById("artPic")
-}
+
 
 responsiveSearch();
 
