@@ -1,0 +1,390 @@
+/* nav{
+    grid-area: pagi;
+    border-style: solid;
+    border-color: transparent;
+    background-color:#F8F6F4;
+
+    display: flex;
+    justify-content : start;
+    align-items: end;
+    gap: 1%;
+
+    padding-bottom: 2%;
+
+    justify-content: center;
+        
+} */
+.pagiHolder{
+    border-style: solid;
+    width: 50%; 
+    height: 100%;
+}
+
+.pagination{
+    background-color: #F8F6F4;
+    border-radius: 100%;
+    width: 2%;
+    height: 40%;
+    color: #1E0B0C;
+    font-family:"Source Sans 3", sans-serif;
+    font-weight: 400;
+
+    border-color: transparent;
+    font-size: large;
+    box-shadow: 2px 3px 5px #D9D9D9, -1px 0px 5px #e9e9e9;
+    transition: .5s ease-in-out;
+
+    margin-bottom: .5% ;
+    
+}
+.pagination.active{
+    background-color: #1E0B0C;
+    color:#F8F6F4;   
+    scale: 1.1;
+}
+.pagination:hover{
+    transition: .3s ease-in-out;
+    border-radius: 100%;
+    background-color: transparent;
+    background-color: #1E0B0C;
+    color:#F8F6F4;
+}
+
+
+section{  
+    margin-top: 20px;
+    /* position:relative; */
+    grid-area: MFoot;
+    border-style: none;
+    border-color: transparent;
+    background:#221213f8;
+    
+    /* height: 500px; */
+
+    display: grid;
+    grid-template-areas:
+        "about Q"
+        "about contact";
+    grid-template-columns:50% 50% ;
+    grid-template-rows: 50% 50%;
+}
+
+.about{
+    grid-area: about;
+
+    border-style: none;
+    border-color: red;
+
+    display: flex;
+    flex-flow: row;
+    /* overflow-x: auto; */
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.about::after{
+    position:absolute;
+    content: "";
+    border-style: solid;
+    border-color: #41282a;
+    border-width: .1vw;
+    height: 86%;
+    width: 0;
+    z-index: 99;
+    top: 6.4%;
+    right:0;
+
+    box-shadow: 0px 0px 10px #000000;
+}
+
+.aboutTextContainer{
+    position: relative;
+    width: 60%;
+    height: 80%;
+    border-style:none; 
+    border-color: blue;
+    display:flex;
+    /* justify-content: center;
+    align-items: center; */
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    flex-flow:row;
+    
+}
+.aboutTextContainer::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+.aboutTextContainer::-webkit-scrollbar-track {
+  background: #3a2a2b;
+    border-radius: 20px
+}
+
+.aboutTextContainer::-webkit-scrollbar-thumb{
+    background-color: #241011;
+      /* border: 3px solid #1e1e1e;  */
+    border-radius: 20px;
+}
+.aboutTextContainer::-webkit-scrollbar-thumb:hover{
+    background-color: #4e2c2d;
+    transition:1s ease-in-out;
+}
+
+.boxes{
+    /* min-width:100.1%; */
+    display: none;
+    flex:1;
+    transition:.6s ease-in-out;
+    position: absolute;
+    border-style: none;
+    border-color: red;
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+}
+.boxes.active{
+    display: block;
+    transition:.6s ease-in-out;
+}
+
+.aboutText{
+    color: #F8F6F4;
+    font-family:"Source Sans 3", sans-serif;
+    font-size: large;
+    font-weight:200;
+
+    padding-left: 3%;
+    line-break:anywhere;
+    line-height: 25px;
+    border-style: none;    
+    width: 100%;
+    height: 70%;
+    
+    margin: 0;
+}
+.titleAbout{
+    width: 100%;
+    height: 30%;
+    border-style: none;
+    border-color: fuchsia;
+    display: flex;
+    flex-flow: column;
+    color: #F8F6F4;
+    font-family:"Source Sans 3", sans-serif;
+    font-size: 50px;
+
+
+    margin: 0;
+
+}
+
+.radioContainer{
+    position:absolute;
+    bottom: 20%;
+    left: 40%;
+    display: flex;
+    gap: 80%;
+}
+
+.slide{
+    border-style: solid;
+    border-color:#523436;
+    border-radius: 50%;
+    scale: 1.7;
+    transition: .5s ease-in-out;
+}
+.slide:hover{
+    border-color: #746b6b;
+    scale: 2.1
+}
+.slide.active{
+    border-color: #fcf9f9;
+    scale: 2.4;
+}
+
+
+
+.webQuote{  
+    grid-area: Q;
+
+    border-style: solid;
+    border-color: transparent;
+    flex-direction: row-reverse;
+
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
+
+    flex-flow: row;
+    
+}
+
+.ReyQ{
+    margin-top: 5%;
+
+    scale: .8;
+
+    width: 19.5%;
+    height: 80%;
+    border-style: solid;
+    border-color: transparent;
+    background-color: #F8F6F4;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+
+    
+}
+#reyImage{
+    scale: 1.1;
+    border-style: none;
+    border-color: blue;
+}
+#quote, #reyport{
+    margin: 3px;
+    font-weight: 200;
+    font-family:"Source Sans 3", sans-serif ;
+    color:white;
+    /* border: red solid; */
+}
+#reyport{
+    font-weight: 500;
+    padding-left: 10%;
+}
+#quote{
+    padding-left: 30%;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.texts{
+    width: 40%;
+    /* height: 100%; */
+    margin-right: 20%;
+    margin-top:5%;
+    gap: 0px;
+    /* border: saddlebrown solid; */
+}
+
+
+
+.contact{
+    grid-area: contact;
+    
+    border-style: solid;
+    border-color: transparent;
+    
+    display: flex;
+    justify-content: center;
+    padding-left: 15%;
+    flex-direction: column;
+
+    position: relative;
+    /* gap: 10%; */
+}
+
+.contact::after{
+       position:absolute;
+    content: "";
+    border-style: solid;
+    border-color: #41282a;
+    border-width: .1vw;
+    height: 0;
+    width: 80%;
+    z-index: 99;
+    
+    z-index: 0;
+
+    top:6%;
+    left: 11%;
+
+    box-shadow: 0px 0px 10px #000000;
+}
+
+.contactTitle{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: bold;
+    color: #F8F6F4;
+    margin-left: 10%;
+    font-size: 1.5rem;
+    /* border:red solid; */
+}
+
+.phone{
+        /* border:red solid; */
+    color: #F8F6F4;
+    font-family: "Source Sans 3", sans-serif;
+    height: 25%;
+    display: flex;
+    font-size: 1.1rem;
+    gap: 5%;
+
+    display: flex;
+    align-items: center;
+}
+.phoneNumber{
+    font-weight: 200;
+}
+.phone img{
+    scale: .79;
+}
+
+.email{
+    display: flex;
+     color: #F8F6F4;
+    font-family: "Source Sans 3", sans-serif;
+    height: 25%;
+    display: flex;
+    font-size: 1.1rem;
+    gap: 5%;
+
+    display: flex;
+    align-items: center;
+}
+.email img{
+    scale: .7;
+}
+
+.emailAdd{
+    font-weight: 200;
+}
+
+
+footer{
+
+    font-family: "Source Sans 3", sans-serif;
+    grid-area: foot;
+    border-style: none;
+    border-color: transparent;
+    /* border-style:solid; */
+        /* box-shadow: 0px -1px 10px 1px #D9D9D9; */
+    /* border-color:yellowgreen; */
+    
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    font-weight:bolder;
+    background: #0c0607 ;
+}
+.credits{
+    border-style: none;
+    border-color: red;
+    width: 100%;
+    height: 100%;
+
+    color: #F8F6F4;
+    font-size: medium;
+    font-family: "Source Sans 3", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.credits p{
+    font-weight: 100;
+}

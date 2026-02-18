@@ -1,0 +1,218 @@
+@import url(style.css);
+
+.logoBox{
+    border-style: solid;
+    border-color: transparent;
+    width: 7%;
+    height: 100%;
+
+    display: flex;
+    /* justify-content: center; */
+
+}
+.imageDoggy{
+    scale: 1;
+    padding-left: 20%;
+    margin-left:2.6vw;
+    transition: ease .2s;
+    user-select: none;
+    transition: ease-in-out .2s;
+}
+.imageDoggy:hover{
+    scale: 1;
+    transition: ease-in-out .2s
+}
+
+
+
+.navButt{
+    border-style: solid;
+    border-color: transparent;
+    width: 80%;
+    height: 100%;
+    
+    padding-left: 4%;
+    display: flex;
+    justify-content: start;
+    gap: .1%;
+    position: relative;
+
+    
+}
+
+.SSC_Container{
+    display: flex;
+    border-style: solid;
+    border-color:transparent;
+    width: 5%;
+    height: 100%;
+    justify-content: left;
+}
+
+.SSC_Logo{
+    border-radius:27%;
+    scale: 1.001;
+    user-select: none;
+    transition: ease-in-out .2s;
+}
+.SSC_Logo:hover{
+    box-shadow:     2px 2px 10px #D9D9D9,
+                    -2px -2px 10px #D9D9D9 ;
+    transition: ease-in-out .5s
+}
+/*  AUSSC_LOGO*/
+/* SEARCHBOX */
+.searchBox{
+    display: flex;
+    border-style: solid;
+    border-color:transparent;
+    width: 23%;
+    height: 100%;    
+
+    /* padding-left:1.7%;  */
+    align-items: center;
+    padding-left: .5%;
+    
+}
+.searchInputContainer{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-style: solid;
+    /* background-color: #dbdad9; */
+    /* box-shadow: 0px 1.25px 2px rgba(0, 0, 0, 0.25); */
+    border-radius: 5vw;
+    box-shadow: 2px 2px 10px #D9D9D9, -1px 0px 5px #D9D9D9;
+    border-color: transparent;
+    border-width: .4px;
+    height: 60%;
+    width: 16vw;
+    
+    
+}
+/* .searchInput{
+    border-color: red;
+    border-style: solid;
+    background: #E7E2DF;
+    border-radius: 0px 37px 37px 0px;
+    height: 7vh;
+    width: 11.4vw; 
+    font-family: "Itim" ,serif;  
+    font-size: 1.5vw;
+} */
+.searchInput:focus{
+    outline: none;
+    /* caret-color: #1E0B0C; */
+}
+
+.searchBtn{
+
+    border-left-style: solid;
+    border-color: #eae7e4;
+    border-width: 2px;
+    display: flex;
+    justify-content: center;
+    
+    border-radius: 0px 5vw 5vw 0px;
+    height: 100%;
+    width: 2.6vw;
+    
+    background: #F8F6F4;
+    user-select: none;
+    cursor:pointer;
+    
+}
+#searchBar{
+    font-size: larger;
+
+    width: 80%;
+    border-radius: 5vw 0px 0px 5vw;
+    caret-color: #1E0B0C;
+    
+    background-color: transparent;
+    border-color: transparent;
+}
+#searchBar:focus{
+    outline: transparent;
+}
+.searchBtnImg{
+    scale: .7;
+    z-index: 100;
+    transition: .3s ease;
+    
+    
+}   
+.searchBtnImg:hover{
+    scale: .8;
+    z-index: 100;
+    transition: .3s ease;
+    filter: brightness(5);
+    
+}   
+.searchBar{
+
+}
+.textBox{
+
+}
+#inputBox{
+
+}
+/* BUTTONS */
+.buttons{
+    position: relative;
+    font-family:"Source Sans 3", sans-serif;
+
+    border-style: solid;
+    border-color:transparent; 
+    width: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:17px;
+        
+    color: #1E0B0C;
+
+
+    transition: .5s ease-in-out;
+    user-select: none;
+    
+    font-weight: 500;
+}
+.buttons:nth-child(3){
+    font-size: 16px;
+    
+    width: fit-content;
+    padding: 1%;
+}
+.buttons:hover{
+    transition: .5s ease-in-out;
+    color:#622325;
+}
+
+.buttons.active{
+     color:#622325;
+     font-weight: bold;
+}
+.buttons.active::after{
+    width: 70px;
+}
+.buttons::after{
+    content: "";
+    position: absolute;
+    z-index: 1000;
+    border-bottom-style: solid;
+    border-color: #622325;
+    width: 0px;
+    height: 40px;
+    margin-bottom:10px;
+    border-width: 2px;
+    opacity: .7;
+
+    transition: .2s ease-in-out;
+
+}
+
+.buttons:hover::after{
+    width:50px;
+}

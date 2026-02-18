@@ -1,0 +1,245 @@
+@media only screen and (max-width:100vh) {
+    .article{
+        rotate: 90deg;
+        
+        width: 90%;
+        height: 80vw;
+        margin: 0;
+    }
+    .contentContainer{
+        padding-left: 0;
+        padding-right: 0;
+        
+    }
+    
+.container{
+    grid-template-rows: 15vw auto 6vh;
+    /* grid-template-columns:7.5% 85% 7.5%;
+
+    /* grid-template-columns:7.5% 85% 7.5%;
+    grid-template-rows: 10vh auto 13vh; */
+}
+ 
+.searchInputContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width:9vw;
+    height: 9vw;
+    padding: 0;
+
+    
+}
+.searchBtn{
+    width: 8vw;
+    height: 8vw;
+    border-style: none;
+}
+.searchBtnImg{
+    scale: .9;
+}
+.searchInput{
+    display: none;
+}
+
+.navButt{
+    width:100%; 
+    display: flex;
+    align-items: center;
+    justify-content:space-around; 
+
+       
+}
+.searchBox{
+    width:25%;
+}
+
+.buttons{
+    border-style: none;
+    border-radius: 50%;
+    width: 11vw;
+    height: 11vw;
+    box-shadow: 0px 0px 3.4px 1px rgba(0, 0, 0, 0.25), inset 0px 0px 1.1px 1px rgba(0, 0, 0, 0.25);   
+}
+.buttons.active{
+    background-color: #e0d8d1;
+}
+.buttons.active:before{
+    display: none;
+}
+
+.buttons:hover:before{
+    display: none;
+}
+
+.buttons:nth-child(1){
+    background-image: url(ICONS/star_24dp_4F2225_FILL0_wght400_GRAD0_opsz24.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 7vw;
+}
+.buttons:nth-child(2){
+    background-image: url(ICONS/TRIP.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 7vw;
+}
+.buttons:nth-child(3){
+    border-radius: 50%;
+    width: 11vw;
+    height: 11vw;
+    background-image: url(ICONS/theater_comedy_24dp_4F2225_FILL0_wght400_GRAD0_opsz24.png);   
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 7vw; 
+}
+.buttons:nth-child(4){
+    background-image: url(ICONS/sports_soccer_24dp_4F2225_FILL0_wght400_GRAD0_opsz24.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 7vw;
+}
+.buttons:nth-child(5){
+    background-image: url(ICONS/devices_other_24dp_4F2225_FILL0_wght400_GRAD0_opsz24.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 7vw;
+}
+
+
+
+
+
+
+
+
+.logoBox{
+    width:20%;
+    justify-content: end;
+
+}
+.imageDoggy{
+    scale: 1.5;
+    margin: 0;
+    /* display: none; */
+}
+
+
+
+.reyPull{
+position: fixed;
+border-radius: 50%;
+width: 20vw;
+height: 20vw;
+top:83vh;
+left: 75vw;
+opacity: .97;
+background-image:url(ICONS/image-removebg-preview.png);
+background-size: 80%;
+background-repeat: no-repeat;
+background-position:center center;
+
+
+
+}
+.reyPull:hover{
+    position: fixed;
+    border-radius: 50%;
+    width: 20vw;
+    height: 20vw;
+    top:83vh;
+    left: 75vw;
+    opacity: .97;
+    background-image:url(ICONS/image-removebg-preview.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position:center center;
+      
+    
+}
+.line{
+    display: none;  
+}
+
+
+.titleBox{
+    height: 10vh;
+}
+.title{
+    font-size: 2vw;
+}
+.logo{
+    width: 14vw;
+    height: 14vw;
+}
+
+.chat{
+    margin-right: 2vw;
+}
+
+.chatIn{
+    height: 12.5vh;
+    width: 90%;
+    background-color: #572326;
+    border-style: none;
+
+    box-shadow: inset 0px 0px 5.8px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 1vh;
+    font-size: 3vh;
+
+    color: #EFEAE6;
+    caret-color: #f5646b;
+    
+    text-shadow: 0px 0px 6px rgba(239, 234, 230, 0.25);
+   
+    resize: none;
+    transition: .5s ease;
+
+    text-align: start;
+}
+
+.submitBox{
+   display:none;
+}
+
+
+.appearingInput{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    
+
+    width: 1%;
+
+    height: 10vw;
+    top: 16vw;
+    left: -15px;
+
+    border-radius: 13px;
+    border-width: 3px;
+    border-color: transparent;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+
+    background-color: #F8F6F4;
+
+    font-size: 2rem;
+    
+    transition: .3s ease;
+}
+.appearingInput:focus
+{
+    outline:none;
+}
+
+.closeButt{
+    width: 6vw;
+    left: -5.6vw;
+}
+#closeArr{
+}   
+#closeArr:hover{
+
+}
+
+}

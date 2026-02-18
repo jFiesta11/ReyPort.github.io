@@ -1,0 +1,370 @@
+@import url(style.css);
+
+.reyPull{
+    position: fixed;
+
+    right:2.3%;
+    top: 90%;
+   background: #221213;
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: 100% ;
+    /* border-style: solid;
+    border-color: red; */
+
+    justify-content: center;
+    box-shadow: 0px 0px 3px #321214, inset 0px 0px 3.5px 3px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    align-items: center;
+    padding-left:5px; 
+    transition:.5s ease-out;
+
+    
+}
+/* .reyPull:hover{
+    width: 3.5vw;
+    height: 30.5vh;
+    border-radius: 5vw 0vw 0vw 5vw ;
+    transition:.25s ease;
+    padding-left: .5vw ;
+} */
+.whistle_img{
+    scale: 1.1;
+    user-select: none;
+    
+}
+
+.chatParent{
+    z-index: 6;
+    position: fixed;
+    right: -100%;
+    width: 25%;
+    height: 100%;
+    background-color: #221213;
+    box-shadow:-.5px 0px 5px  rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    transition: .5s ease-in-out;
+
+    /* border-color: red;
+    border-style: solid; */
+
+}
+
+.titleBox{
+        background-color: #221213;
+        border-style: solid;
+        border-color: transparent;
+        z-index: 7;
+        width: 100%;
+        height:100%;
+        box-shadow: none ;
+        display: flex;
+        justify-content: baseline;
+        align-items: center;
+        padding-left:7%;
+
+        position: relative;
+        
+}
+
+.logo{
+
+    border-radius: 100%;
+    width: 6.5vw;
+    height: 6.5vw;
+    top: 32%;
+    left:12%;
+    border-style: solid;
+    border-color: #221213;
+    border-width: .5vw;
+    box-shadow: inset 0px 0px 7.5px 5px, #000000;
+
+    background: #391D1E;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    z-index: 9;
+
+    
+}
+.chatDoggy{
+    width: 100%;
+    scale: .73;
+    z-index: 999;
+}
+/* .title{
+    box-shadow: inset 0px 0px 5.8px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 1vh;
+    border-style: solid;
+    border-color: red;
+    width: 65%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #EFEAE6;
+    font-size:1vw;
+    text-shadow: 0px 0px 6px rgba(239, 234, 230, 0.25);
+
+    
+
+} */
+
+.chatBox{
+    /* position: absolute; */
+    
+    border-style: none;
+    border-color: blue;
+    width: 100%;
+    height:88%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding-left: 1%;
+    background-color: #F8F6F4;
+
+    /* z-index: 7; */
+    
+    /* position: absolute; */
+    
+}
+.chat{
+    padding-top: 15%;
+    padding-right: 2%;
+    border-style: none;
+    border-color: red; 
+    width: 100%;
+    height:82%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1vh;
+
+    padding-bottom: 5%;
+    /* background-color: #572326; */
+
+    /* box-shadow: inset 0px 0px 9.8px 6px rgba(0, 0, 0, 0.25); */
+    overflow-y:scroll;
+    
+    gap: 4%;
+}
+
+.userHolder{
+position: relative;
+border-style: none;
+border-color: rebeccapurple;
+font-size: 1.5em;
+height: fit-content;
+    color: #f1e1d4;
+display: flex;
+justify-content: end;
+align-items:center;
+flex-shrink: 0;
+}
+
+.prompt{
+    font-family:"Source Sans 3", sans-serif;
+
+    border-style:none;
+    
+    border-radius: 15px;
+    
+    width: fit-content;
+    height: fit-content;
+    max-width: 83%;
+
+    display: flex;
+    font-size: 1.2rem;
+    padding: 15px;
+
+    word-break:break-all;
+    color: black;
+    background-color:#F8F6F4;
+    box-shadow: 1px 3px 15px #2212133d;
+
+    white-space: pre-wrap;
+    word-wrap: break-word;
+
+}
+
+
+.reyHolder{
+    flex-shrink: 0;
+    border-style:none;
+    border-color:rebeccapurple;
+    display: flex;
+    height: fit-content;
+    gap:1%;
+    color: #f1e1d4;
+    justify-content:start;
+    align-items: center;
+}
+.reyBot{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+
+.reyPrompt{
+    font-family:"Source Sans 3", sans-serif;
+
+    border-radius: 15px;
+    
+    width: fit-content;
+    height: fit-content;
+    max-width: 83%;
+
+    display: flex;
+    font-size: 1.2rem;
+    padding: 15px;
+
+    /* word-break:; */
+    color: #F8F6F4;
+    background-color:#391d1e;
+    box-shadow: 1px 3px 15px #2212133d;
+}
+.reyPrompt.loading{
+    background-image:linear-gradient(90deg,rgba(61, 35, 35, 1) 0%, rgba(71, 46, 47, 1) 20%, rgba(77, 53, 55, 1) 50%, rgba(57, 29, 30, 1) 100%);
+    animation: reyLoading 1s ease-in-out infinite;
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 70px;
+}
+
+@keyframes reyLoading{
+    0%{
+        background-position: 300% 0;
+    }
+    100%{
+        background-position: -150% 0;
+    }
+
+}
+.inputChat{
+    width: 100%;    
+    height:15%; 
+    background-color: #F8F6F4;
+    position: absolute;
+    z-index: 7;
+
+    display: flex;
+    align-items:start;
+    justify-content: center;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+
+    bottom: 0;
+}
+
+.inputContainerCont{
+    border-top: solid;
+    width: 100%;
+
+    border-color: #D9D9D9;
+      height: 80%;
+}
+
+.inputContainer{
+    /* border-style: solid;
+    border-color: red; */
+    padding-top: 1.2%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.chatIn{
+    font-family: "Inter" , serif;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-style: none;
+
+    /* box-shadow: inset 0px 0px 5.8px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 1vh; */
+    font-size: 1.2rem;
+
+    color: #1E0B0C;
+    caret-color: #472426;
+    
+    text-shadow: 0px 0px 6px rgba(239, 234, 230, 0.25);
+    
+    resize: none;
+    transition: .5s ease;
+    
+    text-align: start;
+}
+.chatIn:focus{
+    outline: none;
+   
+}
+.submitBox{
+    display: flex;
+    border-style: none;
+    /* border-color: yellowgreen;
+    background-color:  #F8F6F4; */
+    box-shadow: 0px 6px 5px -2px #D7D5D4;
+    width: 15%;
+    height: 60%;
+    border-radius: 100%;
+    justify-content: center;
+}
+.submit{
+    scale: .7;
+    transition: .2s ease;
+}
+.submit:hover{
+    
+    transition: .2s ease;
+    filter: brightness(1.20);
+}
+
+.appearingInput{
+    display:none;
+}
+
+.closeButt{
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    border-style: none;
+
+    box-shadow:0px 0px 3px#a15c5e;
+
+    width: 40px;
+    height: 40px;
+    top:30%;
+    right:5%;
+    
+    background-color: #221213;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#closeArr{
+    
+    transition: .3s ease;
+    scale: .20;
+}
+#closeArr:hover{
+    scale: .26;
+    transition: .5s ease;
+
+}
